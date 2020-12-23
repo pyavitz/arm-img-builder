@@ -3,6 +3,8 @@ CC=./docker/cross
 CROSS=./docker/cross
 NC=./docker/native
 NATIVE=./docker/native
+CBUILD=./docker/cbuild
+NBUILD=./docker/nbuild
 PRG=./docker/purge
 PURGE=./docker/purge
 PRGA=./docker/purge-all
@@ -49,10 +51,15 @@ native:
 	@chmod +x ${NC}
 	@${NATIVE}
 
-build:
-	# Cross compiling ...
+cbuild:
+	# Building cross container
 	@chmod +x ${CC}
 	@${BUILD}
+	
+nbuild:
+	# Building native container
+	@chmod +x ${CC}
+	@${BUILD}	
 
 purge:
 	# Purging ...
