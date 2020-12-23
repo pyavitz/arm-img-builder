@@ -25,9 +25,9 @@ help:
 	@echo 
 	@echo "Outside container: "
 	@echo
-	@echo "  make cross            Pulling image for cross compiling and exec it"
-	@echo "  make native           Pulling image for native compiling and exec it"
-	@echo "  make cbuild           Create docker container for cross compiling"
+	@echo "  make cross            Pulling image for cross compiling and enter it"
+	@echo "  make native           Pulling image for native compiling and enter it"
+	@echo "  make cbuild           Create docker container for cross compiling and enter it"
 	@echo "  make nbuild           Create docker container for native compiling"
 	@echo "  make enter            If exited re-enter container"
 	@echo "  make purge            Purge said container"
@@ -60,8 +60,8 @@ cbuild:
 	
 nbuild:
 	# Building native container
-	@chmod +x ${CC}
-	@${BUILD}	
+	@chmod +x ${NC}
+	@${NATIVE}	
 
 purge:
 	# Purging ...
