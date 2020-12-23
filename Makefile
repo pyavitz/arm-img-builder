@@ -25,8 +25,10 @@ help:
 	@echo 
 	@echo "Outside container: "
 	@echo
-	@echo "  make cross            Create docker container for cross compiling"
-	@echo "  make native           Create docker container for native compiling"
+	@echo "  make cross            Pulling image for cross compiling and exec it"
+	@echo "  make native           Pulling image for native compiling and exec it"
+	@echo "  make cbuild           Create docker container for cross compiling"
+	@echo "  make nbuild           Create docker container for native compiling"
 	@echo "  make enter            If exited re-enter container"
 	@echo "  make purge            Purge said container"
 	@echo "  make purge-all        Purge container and prune volumes"
