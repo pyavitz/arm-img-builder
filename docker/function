@@ -209,6 +209,7 @@ CMD ["/bin/bash"]
 EOF
 }
 
+##Building the container
 docker_build(){
 rm -f docker-compose.yml
 tee docker-compose.yml <<EOF
