@@ -52,7 +52,7 @@ native:
 build:
 	# Cross compiling ...
 	@chmod +x ${CC}
-	@${CROSS}
+	@${BUILD}
 
 purge:
 	# Purging ...
