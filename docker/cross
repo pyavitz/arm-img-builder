@@ -4,6 +4,4 @@ source docker/function
 echo -e "${GRN}Starting pull${FIN} ..."
 docker_cross > /dev/null 2>&1
 docker-compose pull && docker-compose up -d
-docker_build > /dev/null 2>&1
-sudo docker-compose --compatibility up -d --build
 docker exec -it arm-img-builder bash
