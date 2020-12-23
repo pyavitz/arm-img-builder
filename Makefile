@@ -49,6 +49,11 @@ native:
 	@chmod +x ${NC}
 	@${NATIVE}
 
+build:
+	# Cross compiling ...
+	@chmod +x ${CC}
+	@${CROSS}
+
 purge:
 	# Purging ...
 	@chmod +x ${PRG}
